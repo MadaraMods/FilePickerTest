@@ -343,7 +343,7 @@ class FilePickerDialogFragment(
 
                     binding.name.text = file.name
                     binding.details.text = SimpleDateFormat(
-                        "dd-mm-yyyy", Locale.getDefault()
+                        "dd-MM-yyyy", Locale.getDefault()
                     ).format(Date(file.lastModified()))
 
                     if (file.isFile) binding.details.text =
